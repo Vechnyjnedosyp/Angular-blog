@@ -26,9 +26,6 @@ export class CreatePageComponent implements OnInit, OnDestroy {
     })
    }
 
-  ngOnInit(): void {
-  }
-
   submit() {
     if (this.form.invalid) {
       return;
@@ -45,6 +42,9 @@ export class CreatePageComponent implements OnInit, OnDestroy {
       this.form.reset();
       this.alertService.success('Post was created')
     })
+  }
+
+  ngOnInit(): void {
   }
 
   ngOnDestroy() {

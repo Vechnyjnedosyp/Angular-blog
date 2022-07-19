@@ -15,7 +15,7 @@ export class LoginPageComponent implements OnInit {
 
   form: any;
   submitted = false;
-  message!: string; // значение х! ?
+  message!: string;
 
   constructor(
     private fb: FormBuilder,
